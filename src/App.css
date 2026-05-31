@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+}
+
+.app {
+  padding: 20px;
+  font-family: Arial;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+.dark {
+  background: #111827;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  );
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.dark .card {
+  background: #1f2937;
+  border: 1px solid #374151;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #2563eb;
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.chat-box {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.user-msg {
+  text-align: right;
+  margin: 10px;
+}
+
+.ai-msg {
+  text-align: left;
+  margin: 10px;
+}
+
+.chart-card {
+  height: 380px;
+}
